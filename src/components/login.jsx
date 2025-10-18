@@ -1,7 +1,10 @@
 import { images } from "../../public/assets/img";
-import React from 'react'
+import React,{useState} from 'react'
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+
 
 function login() {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <>
     <div className="container">
@@ -42,19 +45,33 @@ function login() {
             
           <div className="w-[70%] text-left text-[#f5deb3] font-serif tracking-wide">
             <form action="">
-                <p className="text-lg sm:text-xl md:text-2xl mb-1 sm:mb-2 md:mb-3 ">TEAM NAME:</p>
+                <p className="text-s sm:text-xl md:text-2xl mb-1 sm:mb-2 md:mb-3 ">TEAM NAME:</p>
           <input
-            type="text" id="name" name="name" class="name"
-            className="outline-none"
+            type="text" id="name" name="name"
+            className="border border-[#f5deb3] bg-transparent text-[#f5deb3] px-2 py-0.1 rounded-md w-30 md:w-60 outline-none"
           />
-            <br /><br />
-          <p className="text-lg sm:text-xl md:text-2xl mt-1 sm:mt-2 md:mt-3 mb-1 sm:mb-2 md:mb-3 ">LOGIN:</p>
-          <input
-            type="password" id="login" name="login" class="login"
-            className=" outline-none"
-          />
+            <br/>
+          <p className="text-s sm:text-xl md:text-2xl mt-1 sm:mt-2 md:mt-3 mb-1 sm:mb-2 md:mb-3 ">LOGIN:</p>
+          <div>
+            <input
+              type={showPassword ? "text" : "password"}
+              id="login"
+              name="login"
+              className="login border border-[#f5deb3] bg-transparent text-[#f5deb3] px-2 rounded-md w-30 md:w-60 outline-none"
+              />
+            <button
+               type="button"
+               onClick={() => setShowPassword(!showPassword)}
+              className="absolute left-[46%] top-[69%] 
+              sm:left-[60%] 
+              sm:top-[70%] 
+              md:left-[50%] md:top-[64%] transform -translate-y-1/2 text-[#f1c27d]"
+              aria-label="Toggle password visibility"
+            >
+            {showPassword ? <FaEyeSlash size={20} /> : <FaEye size={20} />}
+             </button>
+            </div>
             </form>
-          
         </div>
         </div>
       </div>

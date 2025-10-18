@@ -1,4 +1,3 @@
-import Back from "./Bg.png"
 import bg from "./Background.png"
 import frame from "./Frame.png"
 import _2pf from './2pf.png';
@@ -11,7 +10,6 @@ import mirror from './mirror.png';
 import writing from './writing.png';
 
 export const images={
-    Back,
     bg,
     frame,
     _2pf,
