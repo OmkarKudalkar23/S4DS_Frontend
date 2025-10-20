@@ -14,13 +14,13 @@ function login() {
           backgroundImage: `url(${images.bg})`,
         }}
       >
-        <img src={images._2pf} alt="frame1" className="absolute top-[85%] left-[10%] md:top-[74%] md:left-[5%]  w-[90px] sm:w-[140px] md:w-[160px]" />
+        <img src={images.frame1} alt="frame1" className="absolute top-[85%] left-[10%] md:top-[74%] md:left-[5%]  w-[90px] sm:w-[140px] md:w-[160px]" />
 
-        <img src={images._2pfbw} alt="frame2" className="absolute top-[2%] left-[8%] md:top-[0%] md:left-[5%] w-[120px] sm:w-[170px] md:w-[240px]" />
+        <img src={images.frame2} alt="frame2" className="absolute top-[2%] left-[8%] md:top-[0%] md:left-[5%] w-[120px] sm:w-[170px] md:w-[240px]" />
 
-        <img src={images._3pf} alt="frame3" className="absolute top-[10%] left-[45%] md:top-[6%] md:left-[30%] w-[100px] sm:w-[170px] md:w-[200px]" />
+        <img src={images.frame3} alt="frame3" className="absolute top-[10%] left-[45%] md:top-[6%] md:left-[30%] w-[100px] sm:w-[170px] md:w-[200px]" />
 
-        <img src={images._3pfc} alt="frame4" className="absolute top-[18%] left-[10%] md:top-[1%] md:left-[50%] w-[90px] sm:w-[160px] md:w-[180px]" />
+        <img src={images.frame4} alt="frame4" className="absolute top-[18%] left-[10%] md:top-[1%] md:left-[50%] w-[90px] sm:w-[160px] md:w-[180px]" />
 
         <img src={images.cross} alt="frame5" className="absolute top-[67%] left-[10%] md:top-[30%] md:left-[5%] w-[70px] sm:w-[120px] md:w-[147px]"/>
 
